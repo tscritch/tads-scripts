@@ -14,9 +14,9 @@ mkdir $DIR/src
 cp templates/tsconfig.json $DIR/tsconfig.json
 cp templates/utils.ts $DIR/_utils.ts
 cp templates/index.ts $DIR/src/$1.ts
-cp templates/config.ts $DIR/.config.ts
-cp templates/secrets.ts $DIR/.secrets.ts
-echo $'.DS_Store\n\nnode_modules\n\n.secrets.ts\ndata' | tee $DIR/.gitignore
+cp templates/config.ts $DIR/config.ts
+cp templates/secrets.ts $DIR/secrets.ts
+echo $'.DS_Store\n\nnode_modules\n\nsecrets.ts\ndata' | tee $DIR/.gitignore
 
 pushd $DIR
 
